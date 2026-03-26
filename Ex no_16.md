@@ -1,34 +1,35 @@
-# EX 16 C program to find minimum between three fraction numbers using conditional operator.
-## DATE:
+# EX 16 C program to find minimum between three integer numbers using conditional operator.
 ## AIM:
-To write a C program to find minimum between three fraction numbers using conditional operator.
+To write a C program to find minimum between three integer numbers using conditional operator.
 
 ## Algorithm
-1. Start. 
-2. Define a variables a,b,c,min. 
-3. Write program to find minimum numbers. 
-4. Read the value using scanf. 
-5. Ask the user to make an input. 
-6. Print out the answer. 
-7. End.
+
+1.Start the program and read three integer values num1, num2, and num3.
+
+2.Use the conditional (ternary) operator to compare num1, num2, and num3.
+
+3.Assign the smallest value to the variable min using the condition.
+
+4.Display the minimum value among the three numbers.
+
+5.Stop the program.   
 
 ## Program:
 ```
-#include <stdio.h> 
-int main() { 
-float a, b, c, min; 
-scanf("%f%f%f", &a, &b, &c); 
-// Finding minimum using conditional operator 
-min = (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c); 
- 
-printf("Minimum between %.3f, %.3f and %.3f = %.3f\n",a,b,c, min); 
-return 0; 
-} 
+#include <stdio.h>
+int main()
+{
+    int num1,num2,num3,min;
+    scanf("%d%d%d%d",&num1,&num2,&num3,&min);
+    min = (num1 < num2 && num1 < num3) ? num1 : (num2 < num3) ? num2 : num3;
+    printf("Minimum between %d, %d and %d = %d", num1, num2, num3, min);
+    return 0;
+}
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/38c64c90-7947-4b20-ab2b-55fb5c1f992c)
+<img width="514" height="117" alt="Screenshot 2026-03-19 141034" src="https://github.com/user-attachments/assets/423ae8a0-b155-4bec-bde8-7aabb88f5224" />
 
 
 ## Result:
